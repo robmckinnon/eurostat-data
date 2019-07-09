@@ -11,3 +11,19 @@ To install on a Mac:
 ```sh
 brew install csvkit
 ```
+
+## Extract and Transform Data
+
+Run make:
+
+```sh
+make
+```
+
+## Clear Data
+
+Run:
+
+```sh
+make clobber
+```
