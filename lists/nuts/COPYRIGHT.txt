@@ -1,0 +1,11 @@
+Copyright Notice
+
+For data in ./lists/nuts directory the following copyright applies:
+
+EN: © EuroGeographics for the administrative boundaries
+
+FR: © EuroGeographics pour les limites administratives
+
+DE: © EuroGeographics bezüglich der Verwaltungsgrenzen
+
+See: https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units
