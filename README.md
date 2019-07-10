@@ -27,3 +27,9 @@ Run:
 ```sh
 make clobber
 ```
+
+## Administrative Boundaries
+
+### NUTS - Nomenclature of territorial units for statistics classification
+
+[NUTS](https://ec.europa.eu/eurostat/web/nuts/background) [download index](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts)
