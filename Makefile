@@ -2,7 +2,7 @@ TARGETS=\
 	data/contents/table_of_contents_en.tsv\
 	lists/nuts/nuts-2016.tsv\
 	lists/nuts/country.tsv\
-	lists/nuts/lau-2018-nuts-2016.tsv
+	lists/nuts/lau-2018.tsv
 
 all: $(TARGETS)
 
@@ -69,7 +69,20 @@ EU-28-LAU-2018-NUTS-2016-FILES := $(addsuffix .tsv,$(addprefix data/lau-2018/EU-
 ${EU-28-LAU-2018-NUTS-2016-FILES}: data/lau-2018/EU-28-LAU-2018-NUTS-2016-%.tsv: data/lau-2018
 	in2csv --sheet $* $(EU_28_LAU_2018_NUTS_2016_CACHE) | csvformat -T > $@
 
-lists/nuts/lau-2018-nuts-2016.tsv: lists/nuts/country.tsv ${EU-28-LAU-2018-NUTS-2016-FILES}
+data/lau-2018/EU-28-LAU-2018-NUTS-2016-FR.tsv:
+	in2csv --sheet FR $(EU_28_LAU_2018_NUTS_2016_CACHE) | csvformat -T > $@.tmp
+	cat $@.tmp |\
+	sed 's/C.*uvres-et-Valsery/Cœuvres-et-Valsery/' |\
+	sed 's/FRF23	51410	.*uilly/FRF23	51410	Œuilly/' |\
+	sed 's/FRD11	14087	Bonn.*il/FRD11	14087	Bonnœil/' |\
+	sed 's/Cricqueb.*uf/Cricquebœuf/' |\
+	sed 's/Morteaux-Coulib.*uf/Morteaux-Coulibœuf/' |\
+	sed 's/Montemb.*uf/Montembœuf/' |\
+	sed 's/V.*uil-et-Giget/Vœuil-et-Giget/' \
+	> $@
+	rm $@.tmp
+
+lists/nuts/lau-2018.tsv: lists/nuts/country.tsv data/lau-2018/EU-28-LAU-2018-NUTS-2016-FR.tsv
 	csvstack ${EU-28-LAU-2018-NUTS-2016-FILES} |\
 	csvcut -txc "2,1,3,4" |\
 	csvsort -c "2,1" |\
@@ -78,6 +91,8 @@ lists/nuts/lau-2018-nuts-2016.tsv: lists/nuts/country.tsv ${EU-28-LAU-2018-NUTS-
 	sed 's/NUTS 3 CODE/nuts-2016/' |\
 	sed 's/LAU NAME NATIONAL/name/' |\
 	sed 's/LAU NAME LATIN/name-latin/' |\
+	sed 's/[ ][ ]+/ /' |\
+	sed 's/[ ]*$$//' |\
 	csvformat -T \
 	> $@
 
