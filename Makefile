@@ -1,6 +1,12 @@
 TARGETS=\
 	data/contents/table_of_contents_en.tsv\
-	lists/nuts/nuts-2016.tsv
+	lists/nuts/nuts-2016.tsv\
+	lists/nuts/country.tsv\
+	lists/nuts/lau-2018-nuts-2016.tsv
+
+all: $(TARGETS)
+
+# Eurostat contents
 
 CONTENTS=\
 	https://ec.europa.eu/eurostat/estat-navtree-portlet-prod/BulkDownloadListing?sort=1&downfile=table_of_contents_en.txt
@@ -42,6 +48,38 @@ lists/nuts/nuts-2016.tsv: data/nuts-2016-60m/NUTS_AT_2016.csv lists/nuts
 	sed 's/NUTS_NAME/name/' | \
 	sed 's/[ ]*$$//' |\
 	csvformat -T > $@
+
+lists/nuts/country.tsv: lists/nuts/nuts-2016.tsv
+	csvcut -tc country lists/nuts/nuts-2016.tsv | csvsort -t | uniq > $@
+
+# LAU_2018
+
+EU_28_LAU_2018_NUTS_2016=https://ec.europa.eu/eurostat/documents/345175/501971/EU-28-LAU-2018-NUTS-2016.xlsx
+EU_28_LAU_2018_NUTS_2016_CACHE=cache/EU-28-LAU-2018-NUTS-2016.xlsx
+
+$(EU_28_LAU_2018_NUTS_2016_CACHE): cache
+	curl -qsL "${EU_28_LAU_2018_NUTS_2016}" > $@
+
+data/lau-2018: $(EU_28_LAU_2018_NUTS_2016_CACHE)
+	mkdir -p data/lau-2018
+
+countries := $(shell cat lists/nuts/country.tsv | sed 1,1d)
+EU-28-LAU-2018-NUTS-2016-FILES := $(addsuffix .tsv,$(addprefix data/lau-2018/EU-28-LAU-2018-NUTS-2016-,${countries}))
+
+${EU-28-LAU-2018-NUTS-2016-FILES}: data/lau-2018/EU-28-LAU-2018-NUTS-2016-%.tsv: data/lau-2018
+	in2csv --sheet $* $(EU_28_LAU_2018_NUTS_2016_CACHE) | csvformat -T > $@
+
+lists/nuts/lau-2018-nuts-2016.tsv: lists/nuts/country.tsv ${EU-28-LAU-2018-NUTS-2016-FILES}
+	csvstack ${EU-28-LAU-2018-NUTS-2016-FILES} |\
+	csvcut -txc "2,1,3,4" |\
+	csvsort -c "2,1" |\
+	grep -v 'Population data' |\
+	sed 's/LAU CODE/lau-2018/' |\
+	sed 's/NUTS 3 CODE/nuts-2016/' |\
+	sed 's/LAU NAME NATIONAL/name/' |\
+	sed 's/LAU NAME LATIN/name-latin/' |\
+	csvformat -T \
+	> $@
 
 clobber:
 	rm -f $(TARGETS)
