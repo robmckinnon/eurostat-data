@@ -1,0 +1,333 @@
+nuts3-2016	nuts2-2016	nuts1-2016	name
+AL01	AL0	AL	Veri
+AL02	AL0	AL	Qender
+AL03	AL0	AL	Jug
+AT11	AT1	AT	Burgenland
+AT12	AT1	AT	Niederösterreich
+AT13	AT1	AT	Wien
+AT21	AT2	AT	Kärnten
+AT22	AT2	AT	Steiermark
+AT31	AT3	AT	Oberösterreich
+AT32	AT3	AT	Salzburg
+AT33	AT3	AT	Tirol
+AT34	AT3	AT	Vorarlberg
+BE10	BE1	BE	Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest
+BE21	BE2	BE	Prov. Antwerpen
+BE22	BE2	BE	Prov. Limburg (BE)
+BE23	BE2	BE	Prov. Oost-Vlaanderen
+BE24	BE2	BE	Prov. Vlaams-Brabant
+BE25	BE2	BE	Prov. West-Vlaanderen
+BE31	BE3	BE	Prov. Brabant Wallon
+BE32	BE3	BE	Prov. Hainaut
+BE33	BE3	BE	Prov. Liège
+BE34	BE3	BE	Prov. Luxembourg (BE)
+BE35	BE3	BE	Prov. Namur
+BG31	BG3	BG	Северозападен
+BG32	BG3	BG	Северен централен
+BG33	BG3	BG	Североизточен
+BG34	BG3	BG	Югоизточен
+BG41	BG4	BG	Югозападен
+BG42	BG4	BG	Южен централен
+CH01	CH0	CH	Région lémanique
+CH02	CH0	CH	Espace Mittelland
+CH03	CH0	CH	Nordwestschweiz
+CH04	CH0	CH	Zürich
+CH05	CH0	CH	Ostschweiz
+CH06	CH0	CH	Zentralschweiz
+CH07	CH0	CH	Ticino
+CY00	CY0	CY	Κύπρος
+CZ01	CZ0	CZ	Praha
+CZ02	CZ0	CZ	Střední Čechy
+CZ03	CZ0	CZ	Jihozápad
+CZ04	CZ0	CZ	Severozápad
+CZ05	CZ0	CZ	Severovýchod
+CZ06	CZ0	CZ	Jihovýchod
+CZ07	CZ0	CZ	Střední Morava
+CZ08	CZ0	CZ	Moravskoslezsko
+DE11	DE1	DE	Stuttgart
+DE12	DE1	DE	Karlsruhe
+DE13	DE1	DE	Freiburg
+DE14	DE1	DE	Tübingen
+DE21	DE2	DE	Oberbayern
+DE22	DE2	DE	Niederbayern
+DE23	DE2	DE	Oberpfalz
+DE24	DE2	DE	Oberfranken
+DE25	DE2	DE	Mittelfranken
+DE26	DE2	DE	Unterfranken
+DE27	DE2	DE	Schwaben
+DE30	DE3	DE	Berlin
+DE40	DE4	DE	Brandenburg
+DE50	DE5	DE	Bremen
+DE60	DE6	DE	Hamburg
+DE71	DE7	DE	Darmstadt
+DE72	DE7	DE	Gießen
+DE73	DE7	DE	Kassel
+DE80	DE8	DE	Mecklenburg-Vorpommern
+DE91	DE9	DE	Braunschweig
+DE92	DE9	DE	Hannover
+DE93	DE9	DE	Lüneburg
+DE94	DE9	DE	Weser-Ems
+DEA1	DEA	DE	Düsseldorf
+DEA2	DEA	DE	Köln
+DEA3	DEA	DE	Münster
+DEA4	DEA	DE	Detmold
+DEA5	DEA	DE	Arnsberg
+DEB1	DEB	DE	Koblenz
+DEB2	DEB	DE	Trier
+DEB3	DEB	DE	Rheinhessen-Pfalz
+DEC0	DEC	DE	Saarland
+DED2	DED	DE	Dresden
+DED4	DED	DE	Chemnitz
+DED5	DED	DE	Leipzig
+DEE0	DEE	DE	Sachsen-Anhalt
+DEF0	DEF	DE	Schleswig-Holstein
+DEG0	DEG	DE	Thüringen
+DK01	DK0	DK	Hovedstaden
+DK02	DK0	DK	Sjælland
+DK03	DK0	DK	Syddanmark
+DK04	DK0	DK	Midtjylland
+DK05	DK0	DK	Nordjylland
+EE00	EE0	EE	Eesti
+EL30	EL3	EL	Aττική
+EL41	EL4	EL	Βόρειο Αιγαίο
+EL42	EL4	EL	Νότιο Αιγαίο
+EL43	EL4	EL	Κρήτη
+EL51	EL5	EL	Aνατολική Μακεδονία, Θράκη
+EL52	EL5	EL	Κεντρική Μακεδονία
+EL53	EL5	EL	Δυτική Μακεδονία
+EL54	EL5	EL	Ήπειρος
+EL61	EL6	EL	Θεσσαλία
+EL62	EL6	EL	Ιόνια Νησιά
+EL63	EL6	EL	Δυτική Ελλάδα
+EL64	EL6	EL	Στερεά Ελλάδα
+EL65	EL6	EL	Πελοπόννησος
+ES11	ES1	ES	Galicia
+ES12	ES1	ES	Principado de Asturias
+ES13	ES1	ES	Cantabria
+ES21	ES2	ES	País Vasco
+ES22	ES2	ES	Comunidad Foral de Navarra
+ES23	ES2	ES	La Rioja
+ES24	ES2	ES	Aragón
+ES30	ES3	ES	Comunidad de Madrid
+ES41	ES4	ES	Castilla y León
+ES42	ES4	ES	Castilla-La Mancha
+ES43	ES4	ES	Extremadura
+ES51	ES5	ES	Cataluña
+ES52	ES5	ES	Comunidad Valenciana
+ES53	ES5	ES	Illes Balears
+ES61	ES6	ES	Andalucía
+ES62	ES6	ES	Región de Murcia
+ES63	ES6	ES	Ciudad Autónoma de Ceuta
+ES64	ES6	ES	Ciudad Autónoma de Melilla
+ES70	ES7	ES	Canarias
+FI19	FI1	FI	Länsi-Suomi
+FI1B	FI1	FI	Helsinki-Uusimaa
+FI1C	FI1	FI	Etelä-Suomi
+FI1D	FI1	FI	Pohjois- ja Itä-Suomi
+FI20	FI2	FI	Åland
+FR10	FR1	FR	Ile-de-France
+FRB0	FRB	FR	Centre - Val de Loire
+FRC1	FRC	FR	Bourgogne
+FRC2	FRC	FR	Franche-Comté
+FRD1	FRD	FR	Basse-Normandie
+FRD2	FRD	FR	Haute-Normandie
+FRE1	FRE	FR	Nord-Pas de Calais
+FRE2	FRE	FR	Picardie
+FRF1	FRF	FR	Alsace
+FRF2	FRF	FR	Champagne-Ardenne
+FRF3	FRF	FR	Lorraine
+FRG0	FRG	FR	Pays de la Loire
+FRH0	FRH	FR	Bretagne
+FRI1	FRI	FR	Aquitaine
+FRI2	FRI	FR	Limousin
+FRI3	FRI	FR	Poitou-Charentes
+FRJ1	FRJ	FR	Languedoc-Roussillon
+FRJ2	FRJ	FR	Midi-Pyrénées
+FRK1	FRK	FR	Auvergne
+FRK2	FRK	FR	Rhône-Alpes
+FRL0	FRL	FR	Provence-Alpes-Côte d’Azur
+FRM0	FRM	FR	Corse
+FRY1	FRY	FR	Guadeloupe
+FRY2	FRY	FR	Martinique
+FRY3	FRY	FR	Guyane
+FRY4	FRY	FR	La Réunion
+FRY5	FRY	FR	Mayotte
+HR03	HR0	HR	Jadranska Hrvatska
+HR04	HR0	HR	Kontinentalna Hrvatska
+HU11	HU1	HU	Budapest
+HU12	HU1	HU	Pest
+HU21	HU2	HU	Közép-Dunántúl
+HU22	HU2	HU	Nyugat-Dunántúl
+HU23	HU2	HU	Dél-Dunántúl
+HU31	HU3	HU	Észak-Magyarország
+HU32	HU3	HU	Észak-Alföld
+HU33	HU3	HU	Dél-Alföld
+IE04	IE0	IE	Northern and Western
+IE05	IE0	IE	Southern
+IE06	IE0	IE	Eastern and Midland
+IS00	IS0	IS	Ísland
+ITC1	ITC	IT	Piemonte
+ITC2	ITC	IT	Valle d'Aosta/Vallée d'Aoste
+ITC3	ITC	IT	Liguria
+ITC4	ITC	IT	Lombardia
+ITF1	ITF	IT	Abruzzo
+ITF2	ITF	IT	Molise
+ITF3	ITF	IT	Campania
+ITF4	ITF	IT	Puglia
+ITF5	ITF	IT	Basilicata
+ITF6	ITF	IT	Calabria
+ITG1	ITG	IT	Sicilia
+ITG2	ITG	IT	Sardegna
+ITH1	ITH	IT	Provincia Autonoma di Bolzano/Bozen
+ITH2	ITH	IT	Provincia Autonoma di Trento
+ITH3	ITH	IT	Veneto
+ITH4	ITH	IT	Friuli-Venezia Giulia
+ITH5	ITH	IT	Emilia-Romagna
+ITI1	ITI	IT	Toscana
+ITI2	ITI	IT	Umbria
+ITI3	ITI	IT	Marche
+ITI4	ITI	IT	Lazio
+LI00	LI0	LI	Liechtenstein
+LT01	LT0	LT	Sostinės regionas
+LT02	LT0	LT	Vidurio ir vakarų Lietuvos regionas
+LU00	LU0	LU	Luxembourg
+LV00	LV0	LV	Latvija
+ME00	ME0	ME	Црна Гора
+MK00	MK0	MK	Severna Makedonija
+MT00	MT0	MT	Malta
+NL11	NL1	NL	Groningen
+NL12	NL1	NL	Friesland (NL)
+NL13	NL1	NL	Drenthe
+NL21	NL2	NL	Overijssel
+NL22	NL2	NL	Gelderland
+NL23	NL2	NL	Flevoland
+NL31	NL3	NL	Utrecht
+NL32	NL3	NL	Noord-Holland
+NL33	NL3	NL	Zuid-Holland
+NL34	NL3	NL	Zeeland
+NL41	NL4	NL	Noord-Brabant
+NL42	NL4	NL	Limburg (NL)
+NO01	NO0	NO	Oslo og Akershus
+NO02	NO0	NO	Hedmark og Oppland
+NO03	NO0	NO	Sør-Østlandet
+NO04	NO0	NO	Agder og Rogaland
+NO05	NO0	NO	Vestlandet
+NO06	NO0	NO	Trøndelag
+NO07	NO0	NO	Nord-Norge
+PL21	PL2	PL	Małopolskie
+PL22	PL2	PL	Śląskie
+PL41	PL4	PL	Wielkopolskie
+PL42	PL4	PL	Zachodniopomorskie
+PL43	PL4	PL	Lubuskie
+PL51	PL5	PL	Dolnośląskie
+PL52	PL5	PL	Opolskie
+PL61	PL6	PL	Kujawsko-pomorskie
+PL62	PL6	PL	Warmińsko-mazurskie
+PL63	PL6	PL	Pomorskie
+PL71	PL7	PL	Łódzkie
+PL72	PL7	PL	Świętokrzyskie
+PL81	PL8	PL	Lubelskie
+PL82	PL8	PL	Podkarpackie
+PL84	PL8	PL	Podlaskie
+PL91	PL9	PL	Warszawski stołeczny
+PL92	PL9	PL	Mazowiecki regionalny
+PT11	PT1	PT	Norte
+PT15	PT1	PT	Algarve
+PT16	PT1	PT	Centro (PT)
+PT17	PT1	PT	Área Metropolitana de Lisboa
+PT18	PT1	PT	Alentejo
+PT20	PT2	PT	Região Autónoma dos Açores
+PT30	PT3	PT	Região Autónoma da Madeira
+RO11	RO1	RO	Nord-Vest
+RO12	RO1	RO	Centru
+RO21	RO2	RO	Nord-Est
+RO22	RO2	RO	Sud-Est
+RO31	RO3	RO	Sud - Muntenia
+RO32	RO3	RO	Bucureşti - Ilfov
+RO41	RO4	RO	Sud-Vest Oltenia
+RO42	RO4	RO	Vest
+RS11	RS1	RS	Београдски регион
+RS12	RS1	RS	Регион Војводине
+RS21	RS2	RS	Регион Шумадије и Западне Србије
+RS22	RS2	RS	Регион Јужне и Источне Србије
+SE11	SE1	SE	Stockholm
+SE12	SE1	SE	Östra Mellansverige
+SE21	SE2	SE	Småland med öarna
+SE22	SE2	SE	Sydsverige
+SE23	SE2	SE	Västsverige
+SE31	SE3	SE	Norra Mellansverige
+SE32	SE3	SE	Mellersta Norrland
+SE33	SE3	SE	Övre Norrland
+SI03	SI0	SI	Vzhodna Slovenija
+SI04	SI0	SI	Zahodna Slovenija
+SK01	SK0	SK	Bratislavský kraj
+SK02	SK0	SK	Západné Slovensko
+SK03	SK0	SK	Stredné Slovensko
+SK04	SK0	SK	Východné Slovensko
+TR10	TR1	TR	Istanbul
+TR21	TR2	TR	Tekirdag, Edirne, Kirklareli
+TR22	TR2	TR	Balikesir, Çanakkale
+TR31	TR3	TR	Izmir
+TR32	TR3	TR	Aydin, Denizli, Mugla
+TR33	TR3	TR	Manisa, Afyonkarahisar, Kütahya, Usak
+TR41	TR4	TR	Bursa, Eskisehir, Bilecik
+TR42	TR4	TR	Kocaeli, Sakarya, Düzce, Bolu, Yalova
+TR51	TR5	TR	Ankara
+TR52	TR5	TR	Konya, Karaman
+TR61	TR6	TR	Antalya, Isparta, Burdur
+TR62	TR6	TR	Adana, Mersin
+TR63	TR6	TR	Hatay, Kahramanmaras, Osmaniye
+TR71	TR7	TR	Kirikkale, Aksaray, Nigde, Nevsehir, Kirsehir
+TR72	TR7	TR	Kayseri, Sivas, Yozgat
+TR81	TR8	TR	Zonguldak, Karabük, Bartin
+TR82	TR8	TR	Kastamonu, Çankiri, Sinop
+TR83	TR8	TR	Samsun, Tokat, Çorum, Amasya
+TR90	TR9	TR	Trabzon
+TRA1	TRA	TR	Erzurum, Erzincan, Bayburt
+TRA2	TRA	TR	Agri, Kars, Igdir, Ardahan
+TRB1	TRB	TR	Malatya, Elazig, Bingöl, Tunceli
+TRB2	TRB	TR	Van, Mus, Bitlis, Hakkari
+TRC1	TRC	TR	Gaziantep, Adiyaman, Kilis
+TRC2	TRC	TR	Sanliurfa, Diyarbakir
+TRC3	TRC	TR	Mardin, Batman, Sirnak, Siirt
+UKC1	UKC	UK	Tees Valley and Durham
+UKC2	UKC	UK	Northumberland and Tyne and Wear
+UKD1	UKD	UK	Cumbria
+UKD3	UKD	UK	Greater Manchester
+UKD4	UKD	UK	Lancashire
+UKD6	UKD	UK	Cheshire
+UKD7	UKD	UK	Merseyside
+UKE1	UKE	UK	East Yorkshire and Northern Lincolnshire
+UKE2	UKE	UK	North Yorkshire
+UKE3	UKE	UK	South Yorkshire
+UKE4	UKE	UK	West Yorkshire
+UKF1	UKF	UK	Derbyshire and Nottinghamshire
+UKF2	UKF	UK	Leicestershire, Rutland and Northamptonshire
+UKF3	UKF	UK	Lincolnshire
+UKG1	UKG	UK	Herefordshire, Worcestershire and Warwickshire
+UKG2	UKG	UK	Shropshire and Staffordshire
+UKG3	UKG	UK	West Midlands
+UKH1	UKH	UK	East Anglia
+UKH2	UKH	UK	Bedfordshire and Hertfordshire
+UKH3	UKH	UK	Essex
+UKI3	UKI	UK	Inner London - West
+UKI4	UKI	UK	Inner London - East
+UKI5	UKI	UK	Outer London - East and North East
+UKI6	UKI	UK	Outer London - South
+UKI7	UKI	UK	Outer London - West and North West
+UKJ1	UKJ	UK	Berkshire, Buckinghamshire and Oxfordshire
+UKJ2	UKJ	UK	Surrey, East and West Sussex
+UKJ3	UKJ	UK	Hampshire and Isle of Wight
+UKJ4	UKJ	UK	Kent
+UKK1	UKK	UK	Gloucestershire, Wiltshire and Bristol/Bath area
+UKK2	UKK	UK	Dorset and Somerset
+UKK3	UKK	UK	Cornwall and Isles of Scilly
+UKK4	UKK	UK	Devon
+UKL1	UKL	UK	West Wales and The Valleys
+UKL2	UKL	UK	East Wales
+UKM5	UKM	UK	North Eastern Scotland
+UKM6	UKM	UK	Highlands and Islands
+UKM7	UKM	UK	Eastern Scotland
+UKM8	UKM	UK	West Central Scotland
+UKM9	UKM	UK	Southern Scotland
+UKN0	UKN	UK	Northern Ireland
