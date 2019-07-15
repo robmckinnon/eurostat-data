@@ -1,6 +1,9 @@
 TARGETS=\
 	data/contents/table_of_contents_en.tsv\
 	lists/nuts/nuts-2016.tsv\
+	lists/nuts/nuts1-2016.tsv\
+	lists/nuts/nuts2-2016.tsv\
+	lists/nuts/nuts3-2016.tsv\
 	lists/nuts/country.tsv\
 	lists/nuts/lau-2018.tsv
 
@@ -51,6 +54,31 @@ lists/nuts/nuts-2016.tsv: data/nuts-2016-60m/NUTS_AT_2016.csv lists/nuts
 
 lists/nuts/country.tsv: lists/nuts/nuts-2016.tsv
 	csvcut -tc country lists/nuts/nuts-2016.tsv | csvsort -t | uniq > $@
+
+lists/nuts/nuts1-2016.tsv: lists/nuts/nuts-2016.tsv
+	cat lists/nuts/nuts-2016.tsv | csvgrep -tc nuts-2016 -r '^..$$' | \
+	sed 's/nuts-2016/nuts1-2016/' | \
+	csvformat -T \
+	> $@
+
+lists/nuts/nuts2-2016.tsv: lists/nuts/nuts1-2016.tsv
+	cat lists/nuts/nuts-2016.tsv | csvgrep -tc nuts-2016 -r '^...$$' | \
+	sed 's/nuts-2016/nuts2-2016/' | sed 's/country/nuts1-2016/' | \
+	csvformat -T \
+	> $@
+
+lists/nuts/nuts3-2016.tsv: lists/nuts/nuts2-2016.tsv
+	cat lists/nuts/nuts-2016.tsv | csvgrep -tc nuts-2016 -r '^....$$' | \
+	csvcut -c 'nuts-2016,name,nuts-2016' | \
+	sed 's/nuts-2016/nuts3-2016/' | \
+	sed 's/.$$//' | \
+	sed 's/nuts-201$/nuts2-2016/' | \
+	csvcut -c 'nuts3-2016,nuts2-2016,name,nuts2-2016' | \
+	sed 's/.$$//' | \
+	sed 's/nuts2-201$$/nuts1-2016/' | \
+	csvcut -c 'nuts3-2016,nuts2-2016,nuts1-2016,name' | \
+	csvformat -T \
+	> $@
 
 # LAU_2018
 
